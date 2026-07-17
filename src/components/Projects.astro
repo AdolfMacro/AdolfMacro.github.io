@@ -1,0 +1,81 @@
+---
+const username = "AdolfMacro";
+
+let repos = [];
+
+try {
+
+  const response = await fetch(
+    `https://api.github.com/users/${username}/repos?sort=updated&per_page=6`
+  );
+
+  repos = await response.json();
+
+} catch (err) {
+
+  console.log(err);
+
+}
+---
+
+<section class="projects" id="projects">
+
+  <div class="container">
+
+    <div class="section-title">
+
+      <span>ADM://PROJECTS</span>
+
+      <h2>Featured Projects</h2>
+
+    </div>
+
+    <div class="projects-grid">
+
+      {
+        Array.isArray(repos)
+
+        ? repos.map(repo => (
+
+          <div class="project-card">
+
+            <div class="project-header">
+              {repo.name.toUpperCase()}
+            </div>
+
+            <h3>{repo.name}</h3>
+
+            <p>
+              {repo.description || "No description available."}
+            </p>
+
+            <div class="project-tags">
+
+              <span>{repo.language || "Unknown"}</span>
+
+            </div>
+
+            <div class="project-links">
+
+              <a
+                href={repo.html_url}
+                target="_blank"
+                class="project-btn"
+              >
+                View Repository →
+              </a>
+
+            </div>
+
+          </div>
+
+        ))
+
+        : <p>GitHub API Error</p>
+      }
+
+    </div>
+
+  </div>
+
+</section>

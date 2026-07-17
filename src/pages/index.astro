@@ -1,0 +1,226 @@
+---
+import GitHubStats from "../components/GitHubStats.astro";
+import Projects from "../components/Projects.astro";
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro";
+---
+
+<Layout title="AdolfMacro | Portfolio">
+
+  <Navbar />
+
+  <main>
+    <section class="hero" id="home">
+
+
+      <div class="container hero-content">
+
+        <div class="terminal">
+
+          <div class="terminal-header">
+
+            <div class="terminal-logo">
+              ADM://
+            </div>
+
+            <div class="terminal-status">
+              <p class="terminal-title">ROOT_ACCESS</p>
+
+              <p class="online-status">
+                <span></span>
+                ONLINE
+              </p>
+            </div>
+
+          </div>
+
+          <h1>
+            Hi, I'm <span>Mani</span> 👋
+          </h1>
+
+          <h2>
+            Cybersecurity Enthusiast
+            <br />
+            Python Developer
+            <br />
+            Linux Explorer
+          </h2>
+
+          <p class="description">
+          Passionate about Linux, Python, networking, and contributing to open-source projects
+
+          </p>
+
+          <div class="system-panel">
+
+            <h3>SYSTEM_STATUS</h3>
+
+            <div class="status-row">
+              <span>USER</span>
+              <strong>mani</strong>
+            </div>
+
+            <div class="status-row">
+              <span>HOST</span>
+              <strong>ADM-01</strong>
+            </div>
+
+            <div class="status-row">
+              <span>SESSION</span>
+              <strong>ROOT</strong>
+            </div>
+
+            <div class="status-row">
+              <span>SECURITY</span>
+              <strong>SECURE</strong>
+            </div>
+
+          </div>
+
+          <div class="security-status">
+
+            <p>root@adolfmacro:~$ security_scan</p>
+
+            <div class="progress">
+              <span></span>
+            </div>
+
+            <p class="access">
+              ACCESS GRANTED ✓
+            </p>
+
+          </div>
+
+          <div class="hero-actions">
+
+          <a href="#projects" class="btn btn-primary">
+            Explore Projects
+          </a>
+
+          <a href="#contact" class="btn btn-secondary">
+            Get in Touch
+          </a>
+
+        </div>
+
+        </div>
+
+      </div>
+
+    </section>
+<section class="about" id="about">
+
+  <div class="container">
+
+    <div class="about-box">
+
+      <div class="about-header">
+        <span>ADM://ABOUT_ME</span>
+      </div>
+
+      <h2>About Me</h2>
+
+      <p>
+        I'm Mani, a cybersecurity enthusiast passionate about Linux,
+        Python, networking, and secure software development.
+        I enjoy learning new technologies, solving technical challenges,
+        and building open-source projects while continuously improving my skills.
+      </p>
+
+      <div class="about-info">
+
+        <div>
+          <span>Name</span>
+          <strong>Mani Kamran</strong>
+        </div>
+
+        <div>
+          <span>Focus</span>
+          <strong>Cybersecurity</strong>
+        </div>
+
+        <div>
+          <span>E-mail</span>
+          <strong>m4nikamran@gmail.com</strong>
+        </div>
+
+        <div>
+          <span>Languages</span>
+          <strong>Python • C • C# • Bash</strong>
+        </div>
+
+      </div>
+
+    </div>
+
+
+  </div>
+
+</section>
+<GitHubStats />
+<Projects />
+<section class="contact" id="contact">
+
+  <div class="container">
+
+    <div class="contact-box">
+
+      <div class="contact-header">
+        <span>ADM://CONTACT</span>
+      </div>
+
+      <h2>Get In Touch</h2>
+
+      <p>
+        Whether it's cybersecurity, open-source projects, or collaboration,
+        feel free to reach out.
+      </p>
+
+      <div class="contact-list">
+
+        <div class="contact-item">
+          <span>Email</span>
+          <strong>m4nikamran@gmail.com</strong>
+        </div>
+
+        <div class="contact-item">
+          <span>GitHub</span>
+          <strong>github.com/AdolfMacro</strong>
+        </div>
+        <div class="contact-item">
+
+  <span>Telegram</span>
+
+  <strong>
+    <a
+      href="https://t.me/XDadolf"
+      target="_blank"
+    >
+      @XDadolf
+    </a>
+  </strong>
+
+</div>
+        <div class="contact-item">
+          <span>Location</span>
+          <strong>Iran</strong>
+        </div>
+
+      </div>
+
+      <a
+        href="mailto:m4nikamran@gmail.com"
+        class="project-btn"
+      >
+        Send Email →
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+  </main>
+
+</Layout>
